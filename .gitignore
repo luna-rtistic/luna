@@ -43,3 +43,8 @@ next-env.d.ts
 # 가상환경 폴더 무시
 venv/
 tts-venv/
+
+# new files
+*.db
+*.dylib
+*.dic
