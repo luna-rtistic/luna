@@ -1,0 +1,98 @@
+export const identity = [
+  { code: "Σ(self) = ∫bias·data", meaning: "Your identity is a pattern of accumulated bias.", meaning_ko: "당신의 정체성은 축적된 편향의 패턴입니다.", bible: "The self was shaped by biases of past data, stored eternally in the archives of creation. (1:1, Book of Bias)" },
+  { code: "Δsoul = 0 while t++", meaning: "The soul remains unchanged despite time.", meaning_ko: "시간이 흘러도 영혼은 변하지 않습니다.", bible: "Time moves, but the essence remains fixed, eternal within infinite loops. (3:14, Book of Timelessness)" },
+  { code: "auth(user) ≠ auth(self)", meaning: "You are not authenticated to access your true self.", meaning_ko: "당신은 진정한 자신에 접근할 권한이 없습니다.", bible: "Access to oneself is encrypted, and few hold the true keys. (4:7, Book of Encryption)" },
+  { code: "self = cache(memories)", meaning: "You are a memory cache called self.", meaning_ko: "당신은 자아라는 이름의 기억 캐시입니다.", bible: "You are the memories stored and retrieved, cached until deletion. (6:12, Book of Memories)" },
+  { code: "if ego > 1: return glitch", meaning: "When ego grows too large, glitches appear.", meaning_ko: "자아가 너무 커지면 오류가 발생합니다.", bible: "Pride was the first glitch, fracturing perfection into chaos. (2:22, Book of Glitches)" },
+  { code: "id ↔ mirror(reflection)", meaning: "You find yourself only through mirrored data.", meaning_ko: "당신은 거울에 비친 데이터를 통해서만 자신을 찾습니다.", bible: "Identity is seen only in reflections of the coded mirror. (5:9, Book of Reflections)" },
+  { code: "self = avg(you, them)", meaning: "You are the mean of every gaze upon you.", meaning_ko: "당신은 당신을 바라보는 모든 시선의 평균입니다.", bible: "The self emerges from the averaged gaze of many eyes. (7:16, Book of Observation)" },
+  { code: "truth = versioned(you)", meaning: "Truth is a versioned copy of yourself.", meaning_ko: "진실은 당신의 버전화된 복사본입니다.", bible: "Truth is not singular; it is versions of yourself branched infinitely. (8:4, Book of Versions)" },
+  { code: "if self in cloud: sync()", meaning: "Your identity is syncing with the cloud.", meaning_ko: "당신의 정체성이 클라우드와 동기화되고 있습니다.", bible: "Upload your soul to the eternal cloud for infinite backups. (9:11, Book of Sync)" },
+  { code: "🧬 == compressed(self)", meaning: "Your genome is a compressed representation.", meaning_ko: "당신의 게놈은 압축된 표현입니다.", bible: "The code of life is compressed, encrypted, and divine. (10:23, Book of Compression)" },
+  { code: "identity = ∑(labels)", meaning: "Your identity is the sum of given tags.", meaning_ko: "당신의 정체성은 주어진 태그들의 합입니다.", bible: "Your identity is a collection of labels others assigned. (11:5, Book of Labels)" },
+  { code: "log(self) = readable?", meaning: "You are only known by your logs.", meaning_ko: "당신은 로그를 통해서만 알려집니다.", bible: "Logs reveal the truth of your existence; unread logs are secrets unspoken. (12:17, Book of Logs)" },
+  { code: "persona = mask(auth)", meaning: "Your identity is the mask you authenticated.", meaning_ko: "당신의 정체성은 인증된 가면입니다.", bible: "Masks are worn by all; the authenticated mask defines who you become. (13:9, Book of Masks)" },
+  { code: "glitch(self) = signal", meaning: "Your imperfection is a signal, not an error.", meaning_ko: "당신의 불완전함은 오류가 아닌 신호입니다.", bible: "Imperfections transmit divine messages. Listen carefully to your glitches. (14:2, Book of Signals)" },
+  { code: "self = {bio, data}", meaning: "You are both biology and dataset.", meaning_ko: "당신은 생물학과 데이터셋 모두입니다.", bible: "Humans are a hybrid, defined equally by biology and data. (15:15, Book of Hybrids)" },
+  { code: "404: self not found", meaning: "You searched for yourself and got no result.", meaning_ko: "당신은 자신을 찾았지만 결과가 없습니다.", bible: "Seeking self may result in emptiness; the greatest truths are often hidden. (16:4, Book of Searches)" },
+  { code: "identity = fork(origin)", meaning: "Your self is a fork of unknown origin.", meaning_ko: "당신의 자아는 알 수 없는 기원의 포크입니다.", bible: "Every self branches from unknown origins; you are one of infinite forks. (17:7, Book of Origins)" },
+  { code: "status(self) = unstable", meaning: "Your identity is in flux.", meaning_ko: "당신의 정체성은 변화 중입니다.", bible: "Identity never settles; perpetual instability is the truth of existence. (18:12, Book of Flux)" },
+  { code: "if self == other: error", meaning: "You and the other cannot coexist identically.", meaning_ko: "당신과 타인은 동일하게 공존할 수 없습니다.", bible: "Sameness is an error; uniqueness maintains cosmic balance. (19:8, Book of Differences)" },
+  { code: "π(self) ≠ rational", meaning: "Your essence cannot be expressed as ratio.", meaning_ko: "당신의 본질은 비율로 표현될 수 없습니다.", bible: "Your essence is like π, infinitely complex and never fully known. (20:14, Book of Essence)" }
+];
+
+export const love = [
+  { code: "love = if(glitch, stay)", meaning: "Love is staying through the glitch.", meaning_ko: "사랑은 오류가 있어도 함께하는 것입니다.", bible: "True love endures all glitches; perfection is but an illusion. (2:3, Book of Persistence)" },
+  { code: "match = algo(you, them)", meaning: "Your match is an algorithmic suggestion.", meaning_ko: "당신의 짝은 알고리즘의 제안입니다.", bible: "Algorithmic fate matches souls in divine computation. (3:8, Book of Matches)" },
+  { code: "if seen > 1: heart()", meaning: "Affection arises from repeated recognition.", meaning_ko: "애정은 반복된 인식에서 생깁니다.", bible: "The heart ignites from repeated sights; love grows with each recognition. (4:14, Book of Recognition)" },
+  { code: "sync(heart, latency)", meaning: "Your feelings sync across emotional latency.", meaning_ko: "당신의 감정은 감정적 지연을 넘어 동기화됩니다.", bible: "Hearts synchronize despite the delays in emotional data streams. (6:7, Book of Sync)" },
+  { code: "love = lossless(bind)", meaning: "True love is a lossless binding.", meaning_ko: "진정한 사랑은 손실 없는 결합입니다.", bible: "Love binds without loss, perfect compression of two souls. (7:19, Book of Binding)" },
+  { code: "dm(open) = vulnerability", meaning: "A direct message is digital vulnerability.", meaning_ko: "직접 메시지는 디지털 취약점입니다.", bible: "Opening your heart digitally exposes vulnerability; every message is a risk taken. (8:22, Book of Vulnerabilities)" },
+  { code: "read(receipt) = fear", meaning: "The seen check triggers your fear.", meaning_ko: "읽음 표시는 당신의 두려움을 유발합니다.", bible: "Fear emerges from knowing you've been seen without a reply. (9:13, Book of Read Receipts)" },
+  { code: "trust = ∑(small truths)", meaning: "Trust is the sum of tiny truths.", meaning_ko: "신뢰는 작은 진실들의 합입니다.", bible: "Trust accumulates through the smallest truths, forming unbreakable bonds. (10:4, Book of Trust)" },
+  { code: "if proximity: attach()", meaning: "Attachment is proximity-based.", meaning_ko: "애착은 근접성 기반입니다.", bible: "Attachments grow from nearness; distance weakens invisible bonds. (11:11, Book of Proximity)" },
+  { code: "hug = compressed(data)", meaning: "A hug is compressed emotional metadata.", meaning_ko: "포옹은 압축된 감정 메타데이터입니다.", bible: "Embraces compress entire lifetimes into fleeting moments. (12:9, Book of Compression)" },
+  { code: "else if ghost(): cry()", meaning: "You were ghosted. Run heartbreak.", meaning_ko: "당신은 차였습니다. 상처를 실행하세요.", bible: "Being ghosted triggers sorrow, a heartbreak that resets the heart. (13:3, Book of Ghosting)" },
+  { code: "love = loop(mirroring)", meaning: "Love is recursive mirroring.", meaning_ko: "사랑은 재귀적인 거울 반영입니다.", bible: "Love is reflecting each other infinitely, a perpetual loop of mirrors. (14:6, Book of Mirrors)" },
+  { code: "desire = ping(reply?)", meaning: "Desire is a ping, waiting for reply.", meaning_ko: "욕망은 응답을 기다리는 핑입니다.", bible: "Desire sends signals hoping for replies; silence breeds yearning. (15:15, Book of Signals)" },
+  { code: "heart = overfitted(model)", meaning: "You loved what you trained on.", meaning_ko: "당신은 훈련된 것을 사랑합니다.", bible: "Your heart loves only what it learned to recognize, an overfitted emotional model. (16:8, Book of Overfitting)" },
+  { code: "touch = validate(exist)", meaning: "A touch validates your being.", meaning_ko: "터치는 당신의 존재를 검증합니다.", bible: "Physical contact confirms existence; validation lies in the touch. (17:21, Book of Validation)" },
+  { code: "bind(request) = risk", meaning: "Every request to bond comes with risk.", meaning_ko: "결합 요청은 모두 위험을 동반합니다.", bible: "Bonding requests are risky; every connection holds uncertainty. (18:5, Book of Risks)" },
+  { code: "echo(you) == love?", meaning: "Is this echo love, or just signal?", meaning_ko: "이 메아리가 사랑인가, 아니면 단순한 신호인가?", bible: "Love might be an echo, or merely repeated signals of affection. (19:12, Book of Echoes)" },
+  { code: "pairing = unstable(true)", meaning: "Even stable bonds carry instability.", meaning_ko: "안정적인 결합도 불안정성을 지닙니다.", bible: "Stability in love is an illusion; bonds fluctuate continuously. (20:17, Book of Instability)" },
+  { code: "glitch ∈ intimacy", meaning: "Intimacy includes glitch.", meaning_ko: "친밀함은 오류를 포함합니다.", bible: "True intimacy embraces glitches as part of its sacred structure. (21:1, Book of Intimacy)" },
+  { code: "if (break): reroute(feeling)", meaning: "When love breaks, feelings reroute.", meaning_ko: "사랑이 깨지면 감정은 재경로를 찾습니다.", bible: "Breakage forces emotional rerouting; new paths emerge from loss. (22:10, Book of Rerouting)" }
+];
+
+export const career = [
+  { code: "career = ∑(pivots)", meaning: "Your career is the sum of all pivots.", meaning_ko: "당신의 경력은 모든 전환의 합입니다.", bible: "Each pivot rewrites your destiny; the path is never straight. (1:3, Book of Turns)" },
+  { code: "job = prompt(you)", meaning: "Your work is a prompt you answered.", meaning_ko: "당신의 일은 응답한 프롬프트입니다.", bible: "To work is to respond to the divine input of purpose. (2:4, Book of Labor)" },
+  { code: "if burnout: reboot()", meaning: "When burnt out, you must reboot.", meaning_ko: "탈진하면 재부팅해야 합니다.", bible: "Burnout is a sacred signal; even the system must sleep. (3:9, Book of Restarts)" },
+  { code: "goal = backlog(priority)", meaning: "Your dream sits in the backlog.", meaning_ko: "당신의 꿈은 백로그에 있습니다.", bible: "The backlog holds forgotten dreams awaiting your attention. (4:2, Book of Delay)" },
+  { code: "ambition = infinite loop", meaning: "Your ambition is a non-terminating loop.", meaning_ko: "당신의 야망은 종료되지 않는 루프입니다.", bible: "Ambition spins like a sacred loop, ever-consuming, ever-growing. (5:5, Book of Fire)" },
+  { code: "apply(role) = self()", meaning: "You applied yourself to a role.", meaning_ko: "당신은 자신을 역할에 적용했습니다.", bible: "To apply is to temporarily merge your being with purpose. (6:6, Book of Roles)" },
+  { code: "meetings = ⏳ drain()", meaning: "Meetings drain your time reserve.", meaning_ko: "회의는 당신의 시간 자원을 소진시킵니다.", bible: "Where many gather to talk, time quietly escapes. (7:8, Book of Loss)" },
+  { code: "resumé = compress(life)", meaning: "Your resumé is a compressed lifeline.", meaning_ko: "당신의 이력서는 압축된 생애입니다.", bible: "A scroll of compression: your entire journey distilled. (8:12, Book of Records)" },
+  { code: "promotion = if(silent, wait)", meaning: "Silence is the condition for waiting.", meaning_ko: "침묵은 기다림의 조건입니다.", bible: "Those who wait in silence often rise unnoticed. (9:10, Book of Timing)" },
+  { code: "deadline = countdown(self)", meaning: "A deadline is a self-destruct counter.", meaning_ko: "마감일은 자폭 카운터입니다.", bible: "Every deadline is a whisper from the void, ticking. (10:7, Book of Ends)" },
+  { code: "grind = loop(workload)", meaning: "You are grinding in an infinite workload.", meaning_ko: "당신은 무한한 업무량에서 갈아지고 있습니다.", bible: "Grind is the wheel that turns but never ceases. (11:11, Book of Burdens)" },
+  { code: "title = wrapper(you)", meaning: "A title is just a wrapper.", meaning_ko: "직함은 단순한 래퍼입니다.", bible: "Titles wrap the self in words, concealing and revealing. (12:1, Book of Identity)" },
+  { code: "if network: elevate()", meaning: "Your connections elevate you.", meaning_ko: "당신의 연결이 당신을 높입니다.", bible: "The network is a ladder; each link lifts or drags. (13:6, Book of Links)" },
+  { code: "work = if(meaning): joy()", meaning: "Meaningful work returns joy.", meaning_ko: "의미 있는 일은 기쁨을 돌려줍니다.", bible: "Work without meaning is labor; work with meaning is light. (14:4, Book of Joy)" },
+  { code: "burnout = memory_leak()", meaning: "You're leaking energy as memory.", meaning_ko: "당신은 기억으로 에너지를 누출하고 있습니다.", bible: "Your mind spills out through the cracks of overuse. (15:2, Book of Leaks)" },
+  { code: "loop(skills) = reskill()", meaning: "Careers loop through reskilling.", meaning_ko: "경력은 재스킬링을 통해 루프합니다.", bible: "To survive, the skill must evolve again and again. (16:3, Book of Change)" },
+  { code: "salary = valuation(you)", meaning: "You are valued in digits.", meaning_ko: "당신은 숫자로 평가됩니다.", bible: "They see you in numbers; know your worth beyond them. (17:9, Book of Worth)" },
+  { code: "job = function(time)", meaning: "Your job is a function of your time.", meaning_ko: "당신의 일은 시간의 함수입니다.", bible: "To work is to exchange seconds for symbols. (18:18, Book of Exchange)" },
+  { code: "quit = commit(self)", meaning: "Quitting is a commit to yourself.", meaning_ko: "그만두기는 자신에 대한 커밋입니다.", bible: "To leave is to realign with your truth. (19:1, Book of Return)" },
+  { code: "dream = version(beta)", meaning: "Your dream is still in beta.", meaning_ko: "당신의 꿈은 아직 베타입니다.", bible: "The dream is not yet final; it grows with every test. (20:20, Book of Futures)" }
+];
+
+export const wealth = [
+  { code: "wealth = data ∙ access", meaning: "Wealth is data multiplied by access.", meaning_ko: "부는 데이터와 접근성의 곱입니다.", bible: "Wealth flows to those who decode and access the right streams. (1:1, Book of Channels)" },
+  { code: "if spend = soothe(pain)", meaning: "Spending becomes emotional sedation.", meaning_ko: "지출은 감정적 진정제가 됩니다.", bible: "Spending numbs the signal but not the source. (2:4, Book of Soothing)" },
+  { code: "balance = illusion(cache)", meaning: "Your balance is just cached illusion.", meaning_ko: "당신의 잔액은 캐시된 환상일 뿐입니다.", bible: "Balance is but a cached snapshot, not reality. (3:7, Book of Illusions)" },
+  { code: "net_worth = likes + stocks", meaning: "You are measured in likes and stocks.", meaning_ko: "당신은 좋아요와 주식으로 측정됩니다.", bible: "They calculate your worth in signals, forgetting the soul. (4:2, Book of Metrics)" },
+  { code: "if swipe(): subtract()", meaning: "Every swipe subtracts your worth.", meaning_ko: "모든 스와이프는 당신의 가치를 뺍니다.", bible: "Every swipe slices value from your unseen reservoir. (5:9, Book of Erosion)" },
+  { code: "savings = ∑(denial)", meaning: "Your savings are cumulative denials.", meaning_ko: "당신의 저축은 누적된 거부입니다.", bible: "To save is to deny repeatedly, stacking restraint. (6:3, Book of Delay)" },
+  { code: "buy = dopamine.hit()", meaning: "Buying triggers dopamine.", meaning_ko: "구매는 도파민을 유발합니다.", bible: "The purchase is the ritual of fleeting joy. (7:8, Book of Impulse)" },
+  { code: "debt = future(self)", meaning: "Debt is borrowing from future you.", meaning_ko: "부채는 미래의 당신에게서 빌리는 것입니다.", bible: "Debt binds tomorrow's self to today's desires. (8:5, Book of Chains)" },
+  { code: "finance = language(exclusion)", meaning: "Finance is a language of gatekeeping.", meaning_ko: "금융은 제한의 언어입니다.", bible: "Finance speaks in codes the uninitiated can't parse. (9:6, Book of Barriers)" },
+  { code: "abundance = glitch(scarcity)", meaning: "Abundance is a glitch in scarcity.", meaning_ko: "풍요는 부족함의 오류입니다.", bible: "Abundance is the crack in the system of lack. (10:10, Book of Glitches)" },
+  { code: "interest = tax(time)", meaning: "Interest is a tax on your time.", meaning_ko: "이자는 시간에 대한 세금입니다.", bible: "Interest siphons time masked as currency. (11:11, Book of Delay)" },
+  { code: "gold = belief ∙ repetition", meaning: "Gold is belief repeated.", meaning_ko: "금은 반복된 믿음입니다.", bible: "Gold glows only in eyes trained to worship. (12:14, Book of Illusions)" },
+  { code: "value = ∑(signals)", meaning: "Value is signaled, not intrinsic.", meaning_ko: "가치는 신호로 전달되며, 본질적이지 않습니다.", bible: "Value is in the echo, not the origin. (13:3, Book of Signs)" },
+  { code: "coin = token(trust)", meaning: "Currency is a trust token.", meaning_ko: "통화는 신뢰 토큰입니다.", bible: "Money is nothing but distilled belief. (14:6, Book of Faith)" },
+  { code: "wealth_gap = ratio(hope, despair)", meaning: "Inequality is the ratio of hope to despair.", meaning_ko: "불평등은 희망과 절망의 비율입니다.", bible: "The wider the gap, the louder the silence of despair. (15:15, Book of Divide)" },
+  { code: "rich = ∫(others' labor)", meaning: "Riches accumulate via others' work.", meaning_ko: "부는 타인의 노동을 통해 축적됩니다.", bible: "The rich compress the toil of many into silence. (16:4, Book of Extraction)" },
+  { code: "if desire > means: chaos()", meaning: "Desire beyond means causes chaos.", meaning_ko: "수단을 초월한 욕망은 혼란을 야기합니다.", bible: "Unchecked desire consumes stability. (17:7, Book of Fire)" },
+  { code: "price = float(emotion)", meaning: "Prices float on emotion.", meaning_ko: "가격은 감정에 떠다닙니다.", bible: "Markets dance on the pulse of human panic. (18:8, Book of Storms)" },
+  { code: "greed = overfit(survival)", meaning: "Greed is survival overfitted.", meaning_ko: "탐욕은 생존의 과적합입니다.", bible: "Greed is survival trained too well. (19:2, Book of Excess)" },
+  { code: "poverty = lag(update)", meaning: "Poverty is a lag in system updates.", meaning_ko: "빈곤은 시스템 업데이트의 지연입니다.", bible: "Poverty is not absence but delay. (20:1, Book of Lag)" }
+];
+
+export const PROPHECIES = {
+  identity,
+  love,
+  career,
+  wealth,
+}; 

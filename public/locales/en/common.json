@@ -1,0 +1,21 @@
+{
+  "title": "Prophecies",
+  "login": "Login",
+  "logout": "Logout",
+  "comment": "Comment",
+  "comments": "Comments",
+  "delete": "Delete",
+  "submit": "Submit",
+  "back": "← Back",
+  "next": "Next",
+  "dear": "Dear",
+  "reaction": "Reaction",
+  "write_comment": "Write a comment...",
+  "weather": "Weather",
+  "language": "Language",
+  "english": "English",
+  "korean": "Korean",
+  "logging_in": "Logging in...",
+  "logging_out": "Logging out...",
+  "login_with_google": "Login with Google"
+} 

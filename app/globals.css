@@ -1,26 +1,302 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: var(--font-plus-jakarta-sans), var(--font-space-grotesk);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Matrix Code Effect */
+.matrix-code {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.15;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(0, 255, 0, 0.2) 50%,
+    transparent 100%
+  );
+  animation: matrix-rain 20s linear infinite;
+  z-index: 1;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes matrix-rain {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Violet Grid Effect */
+.violet-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(147, 51, 234, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(147, 51, 234, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.3;
+  z-index: 2;
+}
+
+/* Glitch Text Effect */
+.glitch-text {
+  position: relative;
+  font-family: 'Orbitron', 'Plus Jakarta Sans', sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.05em;
+  color: #fff !important;
+  text-shadow: 2px 0 2px rgba(var(--neon-pink), 0.8), -2px 0 2px rgba(var(--neon-blue), 0.8), 0 2px 8px rgba(var(--neon-purple), 0.7) !important;
+  animation: glitch-cyberpunk 1s infinite linear alternate-reverse;
+}
+
+@media (min-width: 768px) {
+  .glitch-text {
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes glitch-cyberpunk {
+  0% {
+    text-shadow:
+      2px 0 2px rgba(var(--neon-pink), 0.8),
+      -2px 0 2px rgba(var(--neon-blue), 0.8),
+      0 2px 8px rgba(var(--neon-purple), 0.7);
+    transform: translate(0, 0) skewX(0deg);
+  }
+  20% {
+    text-shadow:
+      4px 2px 2px rgba(var(--neon-pink), 0.7),
+      -4px -2px 2px rgba(var(--neon-blue), 0.7),
+      0 4px 12px rgba(var(--neon-purple), 0.8);
+    transform: translate(-2px, 1px) skewX(-2deg);
+  }
+  40% {
+    text-shadow:
+      2px -2px 2px rgba(var(--neon-pink), 0.8),
+      -2px 2px 2px rgba(var(--neon-blue), 0.8),
+      0 2px 8px rgba(var(--neon-purple), 0.7);
+    transform: translate(2px, -1px) skewX(2deg);
+  }
+  60% {
+    text-shadow:
+      6px 0 6px rgba(var(--neon-pink), 0.9),
+      -6px 0 6px rgba(var(--neon-blue), 0.9),
+      0 6px 18px rgba(var(--neon-purple), 0.9);
+    transform: translate(-1px, 2px) skewX(-1deg);
+  }
+  80% {
+    text-shadow:
+      2px 2px 2px rgba(var(--neon-pink), 0.8),
+      -2px -2px 2px rgba(var(--neon-blue), 0.8),
+      0 2px 8px rgba(var(--neon-purple), 0.7);
+    transform: translate(1px, -2px) skewX(1deg);
+  }
+  100% {
+    text-shadow:
+      0 0 2px #fff,
+      0 0 8px #fff,
+      0 0 16px #fff;
+    transform: translate(0, 0) skewX(0deg);
+  }
+}
+
+/* Category Button Effect */
+.category-button {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 0 10px rgba(var(--neon-purple), 0.2),
+    inset 0 0 10px rgba(var(--neon-purple), 0.1);
+  transition: all 0.3s ease;
+  min-width: 400px;
+  max-width: 600px;
+  height: 40px;
+  color: white !important;
+  font-family: var(--font-space-grotesk);
+}
+
+.category-button:hover {
+  background: rgba(var(--neon-purple), 0.2);
+  border-color: rgba(var(--neon-purple), 0.5);
+  box-shadow: 
+    0 0 20px rgba(var(--neon-purple), 0.3),
+    inset 0 0 20px rgba(var(--neon-purple), 0.2);
+  transform: translateY(-2px);
+}
+
+.category-button.selected {
+  background: rgba(var(--neon-purple), 0.3);
+  border-color: rgb(var(--neon-purple));
+  box-shadow: 
+    0 0 30px rgba(var(--neon-purple), 0.4),
+    inset 0 0 30px rgba(var(--neon-purple), 0.3);
+}
+
+.category-button:disabled {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+  transform: none;
+}
+
+.category-button:disabled:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+  transform: none;
+}
+
+/* Neon Input Effect */
+.neon-input {
+  border: 1px solid rgba(var(--neon-purple), 0.5);
+  box-shadow: 
+    0 0 10px rgba(var(--neon-purple), 0.3),
+    inset 0 0 10px rgba(var(--neon-purple), 0.1);
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  color: white !important;
+  font-family: var(--font-space-grotesk);
+}
+
+.neon-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.neon-input:focus {
+  border-color: rgb(var(--neon-purple));
+  box-shadow: 
+    0 0 20px rgba(var(--neon-purple), 0.5),
+    inset 0 0 20px rgba(var(--neon-purple), 0.2);
+  color: white !important;
+}
+
+/* Generate Button Effect */
+.generate-button {
+  background: rgba(var(--neon-purple), 0.2);
+  border: 1px solid rgba(var(--neon-purple), 0.5);
+  box-shadow: 
+    0 0 20px rgba(var(--neon-purple), 0.3),
+    inset 0 0 20px rgba(var(--neon-purple), 0.2);
+  transition: all 0.3s ease;
+  color: white !important;
+  width: 200px !important;
+  height: 40px !important;
+  font-family: var(--font-space-grotesk);
+}
+
+.generate-button:not(:disabled) {
+  background: rgba(var(--neon-purple), 0.4);
+  border-color: rgb(var(--neon-purple));
+  box-shadow: 
+    0 0 30px rgba(var(--neon-purple), 0.4),
+    inset 0 0 30px rgba(var(--neon-purple), 0.3);
+}
+
+.generate-button:not(:disabled) span {
+  font-weight: 700;
+}
+
+.generate-button:hover:not(:disabled) {
+  background: rgba(var(--neon-purple), 0.5);
+  border-color: rgb(var(--neon-purple));
+  box-shadow: 
+    0 0 30px rgba(var(--neon-purple), 0.4),
+    inset 0 0 30px rgba(var(--neon-purple), 0.3);
+  transform: translateY(-2px);
+}
+
+.generate-button:disabled {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+  cursor: not-allowed;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.ibm-plex-sans-login {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+@keyframes sparkle {
+  0% {
+    text-shadow: 0 0 10px #a855f7, 0 0 20px #a855f7, 0 0 30px #a855f7;
+    opacity: 1;
+  }
+  50% {
+    text-shadow: 0 0 20px #a855f7, 0 0 30px #a855f7, 0 0 40px #a855f7;
+    opacity: 0.8;
+  }
+  100% {
+    text-shadow: 0 0 10px #a855f7, 0 0 20px #a855f7, 0 0 30px #a855f7;
+    opacity: 1;
+  }
+}
+
+@keyframes cyberpunk {
+  0% {
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #a855f7, 0 0 82px #a855f7, 0 0 92px #a855f7, 0 0 102px #a855f7, 0 0 151px #a855f7;
+    transform: translateY(0);
+  }
+  25% {
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #6366f1, 0 0 82px #6366f1, 0 0 92px #6366f1, 0 0 102px #6366f1, 0 0 151px #6366f1;
+    transform: translateY(-2px);
+  }
+  50% {
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #a855f7, 0 0 82px #a855f7, 0 0 92px #a855f7, 0 0 102px #a855f7, 0 0 151px #a855f7;
+    transform: translateY(0);
+  }
+  75% {
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #6366f1, 0 0 82px #6366f1, 0 0 92px #6366f1, 0 0 102px #6366f1, 0 0 151px #6366f1;
+    transform: translateY(2px);
+  }
+  100% {
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #a855f7, 0 0 82px #a855f7, 0 0 92px #a855f7, 0 0 102px #a855f7, 0 0 151px #a855f7;
+    transform: translateY(0);
+  }
+}
+
+.cyberpunk-text {
+  font-family: 'Orbitron', 'Plus Jakarta Sans', sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 1.25rem; /* xl */
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.05em;
+  color: #fff !important;
+}
+
+@media (min-width: 768px) {
+  .cyberpunk-text {
+    font-size: 1.5rem; /* 2xl */
+  }
+}
+
+:root {
+  --neon-pink: 255, 0, 128;
+  --neon-blue: 0, 255, 255;
+  --neon-purple: 168, 85, 247;
 }

@@ -1,0 +1,21 @@
+{
+  "title": "예언",
+  "login": "로그인",
+  "logout": "로그아웃",
+  "comment": "댓글",
+  "comments": "댓글",
+  "delete": "삭제",
+  "submit": "등록",
+  "back": "← 뒤로가기",
+  "next": "다음",
+  "dear": "친애하는",
+  "reaction": "반응",
+  "write_comment": "댓글을 입력하세요...",
+  "weather": "날씨",
+  "language": "언어",
+  "english": "영어",
+  "korean": "한국어",
+  "logging_in": "로그인 중...",
+  "logging_out": "로그아웃 중...",
+  "login_with_google": "Google로 로그인"
+} 

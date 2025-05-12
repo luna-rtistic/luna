@@ -1,0 +1,64 @@
+
+table_name,column_name,data_type,is_nullable,column_default,foreign_table,foreign_column,policyname,policy_command,policy_condition,with_check,enum_name,enum_value
+comments,content,text,NO,null,null,null,Only comment author can update,UPDATE,(auth.uid() = user_id),null,null,null
+comments,content,text,NO,null,null,null,Only comment author can delete,DELETE,(auth.uid() = user_id),null,null,null
+comments,content,text,NO,null,null,null,Anyone can read comments,SELECT,true,null,null,null
+comments,content,text,NO,null,null,null,Anyone can insert comments,INSERT,null,(auth.uid() = user_id),null,null
+comments,created_at,timestamp with time zone,YES,now(),null,null,Anyone can insert comments,INSERT,null,(auth.uid() = user_id),null,null
+comments,created_at,timestamp with time zone,YES,now(),null,null,Only comment author can delete,DELETE,(auth.uid() = user_id),null,null,null
+comments,created_at,timestamp with time zone,YES,now(),null,null,Only comment author can update,UPDATE,(auth.uid() = user_id),null,null,null
+comments,created_at,timestamp with time zone,YES,now(),null,null,Anyone can read comments,SELECT,true,null,null,null
+comments,id,uuid,NO,gen_random_uuid(),null,null,Anyone can insert comments,INSERT,null,(auth.uid() = user_id),null,null
+comments,id,uuid,NO,gen_random_uuid(),null,null,Anyone can read comments,SELECT,true,null,null,null
+comments,id,uuid,NO,gen_random_uuid(),null,null,Only comment author can delete,DELETE,(auth.uid() = user_id),null,null,null
+comments,id,uuid,NO,gen_random_uuid(),null,null,Only comment author can update,UPDATE,(auth.uid() = user_id),null,null,null
+comments,prophecy_id,uuid,YES,null,prophecies,id,Only comment author can delete,DELETE,(auth.uid() = user_id),null,null,null
+comments,prophecy_id,uuid,YES,null,prophecies,id,Anyone can read comments,SELECT,true,null,null,null
+comments,prophecy_id,uuid,YES,null,prophecies,id,Anyone can insert comments,INSERT,null,(auth.uid() = user_id),null,null
+comments,prophecy_id,uuid,YES,null,prophecies,id,Only comment author can update,UPDATE,(auth.uid() = user_id),null,null,null
+comments,updated_at,timestamp with time zone,YES,null,null,null,Anyone can read comments,SELECT,true,null,null,null
+comments,updated_at,timestamp with time zone,YES,null,null,null,Anyone can insert comments,INSERT,null,(auth.uid() = user_id),null,null
+comments,updated_at,timestamp with time zone,YES,null,null,null,Only comment author can update,UPDATE,(auth.uid() = user_id),null,null,null
+comments,updated_at,timestamp with time zone,YES,null,null,null,Only comment author can delete,DELETE,(auth.uid() = user_id),null,null,null
+comments,user_id,uuid,YES,null,users,id,Anyone can read comments,SELECT,true,null,null,null
+comments,user_id,uuid,YES,null,users,id,Anyone can insert comments,INSERT,null,(auth.uid() = user_id),null,null
+comments,user_id,uuid,YES,null,users,id,Only comment author can delete,DELETE,(auth.uid() = user_id),null,null,null
+comments,user_id,uuid,YES,null,users,id,Only comment author can update,UPDATE,(auth.uid() = user_id),null,null,null
+prophecies,content,text,NO,null,null,null,Author can delete their prophecy,DELETE,(auth.uid() = user_id),null,null,null
+prophecies,content,text,NO,null,null,null,Author can update their prophecy,UPDATE,(auth.uid() = user_id),null,null,null
+prophecies,content,text,NO,null,null,null,User can insert their own prophecy,INSERT,null,(auth.uid() = user_id),null,null
+prophecies,content,text,NO,null,null,null,Anyone can read prophecies,SELECT,true,null,null,null
+prophecies,created_at,timestamp with time zone,YES,now(),null,null,Author can delete their prophecy,DELETE,(auth.uid() = user_id),null,null,null
+prophecies,created_at,timestamp with time zone,YES,now(),null,null,Anyone can read prophecies,SELECT,true,null,null,null
+prophecies,created_at,timestamp with time zone,YES,now(),null,null,User can insert their own prophecy,INSERT,null,(auth.uid() = user_id),null,null
+prophecies,created_at,timestamp with time zone,YES,now(),null,null,Author can update their prophecy,UPDATE,(auth.uid() = user_id),null,null,null
+prophecies,id,uuid,NO,gen_random_uuid(),null,null,Anyone can read prophecies,SELECT,true,null,null,null
+prophecies,id,uuid,NO,gen_random_uuid(),null,null,Author can delete their prophecy,DELETE,(auth.uid() = user_id),null,null,null
+prophecies,id,uuid,NO,gen_random_uuid(),null,null,Author can update their prophecy,UPDATE,(auth.uid() = user_id),null,null,null
+prophecies,id,uuid,NO,gen_random_uuid(),null,null,User can insert their own prophecy,INSERT,null,(auth.uid() = user_id),null,null
+prophecies,updated_at,timestamp with time zone,YES,null,null,null,Anyone can read prophecies,SELECT,true,null,null,null
+prophecies,updated_at,timestamp with time zone,YES,null,null,null,Author can delete their prophecy,DELETE,(auth.uid() = user_id),null,null,null
+prophecies,updated_at,timestamp with time zone,YES,null,null,null,Author can update their prophecy,UPDATE,(auth.uid() = user_id),null,null,null
+prophecies,updated_at,timestamp with time zone,YES,null,null,null,User can insert their own prophecy,INSERT,null,(auth.uid() = user_id),null,null
+prophecies,user_id,uuid,YES,null,users,id,Author can update their prophecy,UPDATE,(auth.uid() = user_id),null,null,null
+prophecies,user_id,uuid,YES,null,users,id,Author can delete their prophecy,DELETE,(auth.uid() = user_id),null,null,null
+prophecies,user_id,uuid,YES,null,users,id,Anyone can read prophecies,SELECT,true,null,null,null
+prophecies,user_id,uuid,YES,null,users,id,User can insert their own prophecy,INSERT,null,(auth.uid() = user_id),null,null
+reactions,created_at,timestamp with time zone,YES,now(),null,null,Anyone can react,INSERT,null,(auth.uid() = user_id),null,null
+reactions,created_at,timestamp with time zone,YES,now(),null,null,Anyone can read reactions,SELECT,true,null,null,null
+reactions,created_at,timestamp with time zone,YES,now(),null,null,User can delete their own reaction,DELETE,(auth.uid() = user_id),null,null,null
+reactions,id,uuid,NO,gen_random_uuid(),null,null,User can delete their own reaction,DELETE,(auth.uid() = user_id),null,null,null
+reactions,id,uuid,NO,gen_random_uuid(),null,null,Anyone can read reactions,SELECT,true,null,null,null
+reactions,id,uuid,NO,gen_random_uuid(),null,null,Anyone can react,INSERT,null,(auth.uid() = user_id),null,null
+reactions,prophecy_id,uuid,YES,null,prophecies,id,User can delete their own reaction,DELETE,(auth.uid() = user_id),null,null,null
+reactions,prophecy_id,uuid,YES,null,prophecies,id,Anyone can react,INSERT,null,(auth.uid() = user_id),null,null
+reactions,prophecy_id,uuid,YES,null,prophecies,id,Anyone can read reactions,SELECT,true,null,null,null
+reactions,type,USER-DEFINED,NO,null,null,null,User can delete their own reaction,DELETE,(auth.uid() = user_id),null,null,null
+reactions,type,USER-DEFINED,NO,null,null,null,Anyone can react,INSERT,null,(auth.uid() = user_id),null,null
+reactions,type,USER-DEFINED,NO,null,null,null,Anyone can read reactions,SELECT,true,null,null,null
+reactions,user_id,uuid,YES,null,users,id,User can delete their own reaction,DELETE,(auth.uid() = user_id),null,null,null
+reactions,user_id,uuid,YES,null,users,id,Anyone can read reactions,SELECT,true,null,null,null
+reactions,user_id,uuid,YES,null,users,id,Anyone can react,INSERT,null,(auth.uid() = user_id),null,null
+users,created_at,timestamp with time zone,YES,now(),null,null,User can read their own profile,SELECT,(auth.uid() = id),null,null,null
+users,id,uuid,NO,null,users,id,User can read their own profile,SELECT,(auth.uid() = id),null,null,null
+users,username,text,YES,null,null,null,User can read their own profile,SELECT,(auth.uid() = id),null,null,null

@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Orbitron, Unica_One, Plus_Jakarta_Sans, IBM_Plex_Mono } from "next/font/google";
-import "./globals.css";
-import Header from "./components/Header";
+import "../globals.css";
+import Header from "../components/Header";
+import AudioControl from '../components/AudioControl';
+import { languages } from '../i18n/settings';
 
 const spaceGrotesk = Space_Grotesk({ 
   subsets: ["latin"],
@@ -33,19 +35,20 @@ export const metadata: Metadata = {
   description: "Receive your algorithmic prophecy from the digital oracle",
 };
 
-export default function RootLayout({
+export async function generateStaticParams() {
+  return languages.map((lng) => ({ lng }));
+}
+
+export default function Layout({
   children,
+  params: { lng }
 }: {
   children: React.ReactNode;
+  params: { lng: string };
 }) {
   return (
-    <html>
-      <body className={`${plusJakartaSans.variable} ${spaceGrotesk.variable} ${orbitron.variable} ${ibmPlexMono.variable} font-sans`}>
-        <Header />
-        <main className="min-h-screen">
-          {children}
-        </main>
-      </body>
-    </html>
+    <div lang={lng}>
+      {children}
+    </div>
   );
-}
+} 
