@@ -7,7 +7,7 @@ export default function RootPage() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (!/^\/(en|ko)(\/|$)/.test(pathname)) {
+    if (pathname && !/^\/(en|ko)(\/|$)/.test(pathname)) {
       router.replace('/en');
     }
   }, [pathname, router]);

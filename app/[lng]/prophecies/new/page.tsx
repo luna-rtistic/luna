@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter, useSearchParams, useParams } from 'next/navigation';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import styled from 'styled-components';
 import { PROPHECIES } from '@/lib/propheciesData';
 import { motion } from 'framer-motion';
@@ -176,7 +176,8 @@ const TTSButton = styled.button`
   }
 `;
 
-export default function NewProphecyPage() {
+// Separate client component for useSearchParams
+function NewProphecyContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const params = useParams();
@@ -358,5 +359,13 @@ export default function NewProphecyPage() {
         </NeonButton>
       </Container>
     </StyledMain>
+  );
+}
+
+export default function NewProphecyPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <NewProphecyContent />
+    </Suspense>
   );
 } 

@@ -1,16 +1,17 @@
 'use client';
 import { useSearchParams, useRouter } from 'next/navigation';
-import { useRef, useState } from 'react';
+import { useRef, useState, Suspense } from 'react';
 import html2canvas from 'html2canvas';
 import { supabase } from '@/lib/supabase';
 
-export default function ShareProphecyPage() {
+// Separate client component for useSearchParams
+function ShareProphecyContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const holy = searchParams.get('holy');
-  const english = searchParams.get('english');
-  const name = searchParams.get('name');
-  const category = searchParams.get('category');
+  const holy = searchParams?.get('holy');
+  const english = searchParams?.get('english');
+  const name = searchParams?.get('name');
+  const category = searchParams?.get('category');
   const [comment, setComment] = useState('');
   const [isSharing, setIsSharing] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -88,5 +89,13 @@ export default function ShareProphecyPage() {
         {isSharing ? '공유 중...' : '공유하기'}
       </button>
     </main>
+  );
+}
+
+export default function ShareProphecyPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ShareProphecyContent />
+    </Suspense>
   );
 } 

@@ -24,7 +24,7 @@ const getWeatherIcon = (weatherCode: number) => {
 
 export default function Header() {
   const params = useParams();
-  const lng = params.lng as string;
+  const lng = params && 'lng' in params ? (params.lng as string) : 'en';
   const { t } = useTranslation();
   const [weather, setWeather] = useState<{ temp: number; description: string; icon: string } | null>(null);
   const [loading, setLoading] = useState(true);
